@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en">  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wanderlust - Submitted</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+
+<body>
+  <header id="header">
+    <a href="../index.html" id="logo"><img width= "90px" src="../images/websitelogo2.gif"/></a>
+    <a href="../index.html"><h6 id="logo-name">Wanderlust</h6></a>
+    <nav id="navigation">
+      <ul class="top-nav-bar">
+        <li class="top-nav"><a href="../index.html">Home</a></li>
+          <div class="top-nav">
+            <li class="dropdown"><a>Countries</a></li>
+            <div class="dropdown-content">
+              <a href="./australia.html">Australia</a>
+              <a href="./malaysia.html">Malaysia</a>
+              <a href="./portugal.html">Portugal</a>
+              <a href="./usa.html">USA</a>
+            </div>
+          </div>
+          <li class="top-nav"><a href="../meettheteam.html">Meet the Team</a></li>
+        <li class="top-nav"><a href="../contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <form action="./submit page/submitted-page.html">
+    
+        <label for="fname">* First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">* Surname</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="email">* Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address.." required>
+        
+        <label for="country">* Country</label>
+        <input type="text" name="country" id="country" list="options" required>
+        <datalist id="options">
+          <option>United Kingdom</option>
+          <option>Australia</option>
+          <option>Belgium</option>
+          <option>Canada</option>
+          <option>France</option>
+          <option>Germany</option>
+          <option>Greece</option>
+          <option>Italy</option>
+          <option>Mexico</option>
+          <option>Netherlands</option>
+          <option>Republic of Ireland</option>
+          <option>Spain</option>
+          <option>United Arab Emirates</option>
+          <option>USA</option>
+      
+        </datalist>
+      
+        <label for="subject">* Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+        
+        <h3 class = "required">* Required Fields</h3>
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+    <div id="submittedBox" class="popup-container-submit">
+        <div class="popup-submit">
+            <h1>Thank you for contacting us!</h1>
+            <button onclick="window.location.href='../index.html'">Home</button>
+            <button onclick="closeBox('submittedBox')">Close</button>
+          </div>
+    </div>
+  </main>
+
+
+  <footer id="footer">
+    <ul class="footer-list">
+      <li class="bottom-nav"><a href="https://codefirstgirls.org.uk/" target="_blank">Code First Girls</a></li> <!-- what do we want in the footer? -->
+      <li class="bottom-nav"><a href="../contactus.html">Contact Us</a></li>
+    </ul>
+    <button class="scroll-button" onclick="topFunction()" id="myBtn">Go To Top</button>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

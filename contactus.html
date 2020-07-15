@@ -1,0 +1,290 @@
+<!DOCTYPE html> 
+<html lang="en">  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wanderlust - Contact Us</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<body>
+  <header id="header">
+    <a href="./index.html" id="logo"><img width= "90px" src="images/websitelogo2.gif"/></a>
+    <a href="./index.html"><h6 id="logo-name">Wanderlust</h6></a>
+    <nav id="navigation">
+      <ul class="top-nav-bar">
+        <li class="top-nav"><a href="./index.html">Home</a></li>
+          <div class="top-nav">
+            <li class="dropdown"><a>Countries</a></li>
+            <div class="dropdown-content">
+              <a href="./countries/australia.html">Australia</a>
+              <a href="./countries/malaysia.html">Malaysia</a> 
+              <a href="./countries/portugal.html">Portugal</a>
+              <a href="./countries/usa.html">USA</a> 
+            </div>
+          </div>
+          <li class="top-nav"><a href="./meettheteam.html">Meet the Team</a></li>
+        <li class="top-nav"><a href="./contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <form onsubmit="event.preventDefault(); show('submittedBox')">
+    
+        <label for="fname">* First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">* Surname</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="email">* Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address.." required>
+        
+        <label for="country">* Country</label>
+        <input type="text" name="country" id="country" list="options" required>
+        <datalist id="options">
+          <option>Afghanistan</option>
+          <option>Angola</option>
+          <option>Albania</option>
+          <option>United Arab Emirates</option>
+          <option>Argentina</option>
+          <option>Armenia</option>
+          <option>Australia</option>
+          <option>Austria</option>
+          <option>Azerbaijan</option>
+          <option>Burundi</option>
+          <option>Belgium</option>
+          <option>Benin</option>
+          <option>Burkina Faso</option>
+          <option>Bangladesh</option>
+          <option>Bulgaria</option>
+          <option>Bosnia and Herz.</option>
+          <option>Belarus</option>
+          <option>Belize</option>
+          <option>Bolivia</option>
+          <option>Brazil</option>
+          <option>Brunei</option>
+          <option>Bhutan</option>
+          <option>Botswana</option>
+          <option>Central African Rep.</option>
+          <option>Canada</option>
+          <option>Switzerland</option>
+          <option>Chile</option>
+          <option>China</option>
+          <option>Côte d'Ivoire</option>
+          <option>Cameroon</option>
+          <option>Dem. Rep. Congo</option>
+          <option>Congo</option>
+          <option>Colombia</option>
+          <option>Costa Rica</option>
+          <option>Cuba</option>
+          <option>Czech Rep.</option>
+          <option>Germany</option>
+          <option>Djibouti</option>
+          <option>Denmark</option>
+          <option>Dominican Rep.</option>
+          <option>Algeria</option>
+          <option>Ecuador</option>
+          <option>Egypt</option>
+          <option>Eritrea</option>
+          <option>Estonia</option>
+          <option>Ethiopia</option>
+          <option>Finland</option>
+          <option>Fiji</option>
+          <option>Gabon</option>
+          <option>United Kingdom</option>
+          <option>Georgia</option>
+          <option>Ghana</option>
+          <option>Guinea</option>
+          <option>Gambia</option>
+          <option>Guinea-Bissau</option>
+          <option>Eq. Guinea</option>
+          <option>Greece</option>
+          <option>Greenland</option>
+          <option>Guatemala</option>
+          <option>Guyana</option>
+          <option>Honduras</option>
+          <option>Croatia</option>
+          <option>Haiti</option>
+          <option>Hungary</option>
+          <option>Indonesia</option>
+          <option>India</option>
+          <option>Ireland</option>
+          <option>Iran</option>
+          <option>Iraq</option>
+          <option>Iceland</option>
+          <option>Israel</option>
+          <option>Italy</option>
+          <option>Jamaica</option>
+          <option>Jordan</option>
+          <option>Japan</option>
+          <option>Kazakhstan</option>
+          <option>Kenya</option>
+          <option>Kyrgyzstan</option>
+          <option>Cambodia</option>
+          <option>Korea</option>
+          <option>Kuwait</option>
+          <option>Lao PDR</option>
+          <option>Lebanon</option>
+          <option>Liberia</option>
+          <option>Libya</option>
+          <option>Sri Lanka</option>
+          <option>Lesotho</option>
+          <option>Lithuania</option>
+          <option>Luxembourg</option>
+          <option>Latvia</option>
+          <option>Morocco</option>
+          <option>Moldova</option>
+          <option>Madagascar</option>
+          <option>Mexico</option>
+          <option>Macedonia</option>
+          <option>Mali</option>
+          <option>Myanmar</option>
+          <option>Montenegro</option>
+          <option>Mongolia</option>
+          <option>Mozambique</option>
+          <option>Mauritania</option>
+          <option>Malawi</option>
+          <option>Malaysia</option>
+          <option>Namibia</option>
+          <option>Niger</option>
+          <option>Nigeria</option>
+          <option>Nicaragua</option>
+          <option>Netherlands</option>
+          <option>Norway</option>
+          <option>Nepal</option>
+          <option>New Zealand</option>
+          <option>Oman</option>
+          <option>Pakistan</option>
+          <option>Panama</option>
+          <option>Peru</option>
+          <option>Philippines</option>
+          <option>Papua New Guinea</option>
+          <option>Poland</option>
+          <option>Dem. Rep. Korea</option>
+          <option>Portugal</option>
+          <option>Paraguay</option>
+          <option>Palestine</option>
+          <option>Qatar</option>
+          <option>Romania</option>
+          <option>Russia</option>   
+          <option>Rwanda</option>
+          <option>W. Sahara</option>
+          <option>Saudi Arabia</option>
+          <option>Sudan</option>
+          <option>S. Sudan</option>
+          <option>Senegal</option>
+          <option>Sierra Leone</option>
+          <option>El Salvador</option>
+          <option>Serbia</option>
+          <option>Suriname</option>
+          <option>Slovakia</option>
+          <option>Slovenia</option>
+          <option>Sweden</option>
+          <option>Swaziland</option>
+          <option>Syria</option>
+          <option>Chad</option>
+          <option>Togo</option>
+          <option>Thailand</option>
+          <option>Tajikistan</option>
+          <option>Turkmenistan</option>
+          <option>Timor-Leste</option>
+          <option>Tunisia</option>
+          <option>Turkey</option>
+          <option>Taiwan</option>
+          <option>Tanzania</option>
+          <option>Uganda</option>
+          <option>Ukraine</option>
+          <option>Uruguay</option>
+          <option>United States</option>
+          <option>Uzbekistan</option>
+          <option>Venezuela</option>
+          <option>Vietnam</option>
+          <option>Vanuatu</option>
+          <option>Yemen</option>
+          <option>South Africa</option>
+          <option>Zambia</option>
+          <option>Zimbabwe</option>
+          <option>Somalia</option>
+          <option>French Guiana</option>
+          <option>France</option>
+          <option>Spain</option>
+          <option>Aruba</option>
+          <option>Anguilla</option>
+          <option>Andorra</option>
+          <option>Antigua and Barb.</option>
+          <option>Bahamas</option>
+          <option>Bermuda</option>
+          <option>Barbados</option>
+          <option>Comoros</option>
+          <option>Cape Verde</option>
+          <option>Cayman Is.</option>
+          <option>Dominica</option>
+          <option>Falkland Is.</option>
+          <option>Faeroe Is.</option>
+          <option>Grenada</option>
+          <option>Hong Kong</option>
+          <option>St. Kitts and Nevis</option>
+          <option>Saint Lucia</option>
+          <option>Liechtenstein</option>
+          <option>Maldives</option>
+          <option>Malta</option>
+          <option>Montserrat</option>
+          <option>Mauritius</option>
+          <option>New Caledonia</option>
+          <option>Nauru</option>
+          <option>Pitcairn Is.</option>
+          <option>Puerto Rico</option>
+          <option>Fr. Polynesia</option>
+          <option>Singapore</option>
+          <option>Solomon Is.</option>
+          <option>São Tomé and Principe</option>
+          <option>Sint Maarten</option>
+          <option>Seychelles</option>
+          <option>Turks and Caicos Is.</option>
+          <option>Tonga</option>
+          <option>Trinidad and Tobago</option>
+          <option>St. Vin. and Gren.</option>
+          <option>British Virgin Is.</option>
+          <option>U.S. Virgin Is.</option>
+          <option>Cyprus</option>
+          <option>Reunion</option>
+          <option>Mayotte</option>
+          <option>Martinique</option>
+          <option>Guadeloupe</option>
+          <option>Curaco</option>
+          <option>Canary Islands</option>
+      
+        </datalist>
+        <label for="subject">* Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+        
+        <h3 class = "required">* Required Fields</h3>
+        <input type="submit" value="Submit">    
+      </form>
+    </div>
+  </main>
+
+  <div id="submittedBox" class="popup-container">
+    <div class="popup">
+        <h1>All received!</h1>
+        <button onclick="window.location.href='./index.html'">Home</button>
+        <button onclick="hide('submittedBox')">Close</button>
+        </div>
+  </div>
+
+  <footer id="footer">
+    <ul class="footer-list">
+      <li class="bottom-nav"><a href="https://codefirstgirls.org.uk/" target="_blank">Code First Girls</a></li> <!-- what do we want in the footer? -->
+      <li class="bottom-nav"><a href="./contactus.html">Contact Us</a></li>
+    </ul>
+    <button class="scroll-button" onclick="topFunction()" id="myBtn">Go To Top</button>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
